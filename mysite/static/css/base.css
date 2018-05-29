@@ -1,0 +1,51 @@
+body {
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+div#header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+  width: 100%;
+  display: table;
+  background: orange;
+}
+
+div#menu {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  height: 20px;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-spacing: 40px 0px;
+  background: #ffa;
+  font-size: 8px;
+}
+div#content {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+}
+
+div#footer{
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  right: 50px;
+  height: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.maintitle {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  color: #ffc;
+  font-weight: bold;
+  font-size: 16px;
+}
