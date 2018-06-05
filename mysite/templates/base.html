@@ -6,7 +6,9 @@
 
   {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" />
-  <link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}"
+  <link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
 </head>
 
 <body>
@@ -19,6 +21,7 @@
       <a href="#"> Logout </a>
     </h4>
   </div>
+
   <div id="menu">
     <li> <a href="#">Home</a> </li>
     <li> <a href="#">Bookmark</a> </li>
@@ -45,5 +48,8 @@
 
   {% block content %}{% endblock %}
   {% block footer %}{% endblock %}
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 </html>
